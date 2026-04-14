@@ -8,7 +8,7 @@ import Desserts from '@/components/Desserts';
 import SectionDivider from '@/components/DividerProps';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-
+import PresentationQR from '@/components/PresentationQR';
 export default function Home() {
   const [isColor, setIsColor] = useState(false);
 
@@ -24,6 +24,7 @@ export default function Home() {
       <SectionDivider isColor={isColor} />
       {/* Tu peux ajouter tes autres sections ici */}
       <Contact isColor={isColor} />
+      <PresentationQR isColor={isColor} />
       <Footer isColor={isColor} />
     </div>
   );
