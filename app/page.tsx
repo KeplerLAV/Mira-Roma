@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Nav from '@/components/Header';
 import Hero from '@/components/Hero';
+import AboutSection from '@/components/AboutSection';
 import Carte from '@/components/Carte';
 import Desserts from '@/components/Desserts';
 import SectionDivider from '@/components/DividerProps';
@@ -15,6 +16,7 @@ export default function Home() {
     <div className={isColor ? "bg-brand-light" : "bg-white"}>
       <Nav isColor={isColor} setIsColor={setIsColor} />
       <Hero isColor={isColor} />
+      <AboutSection isColor={isColor} />
       <SectionDivider isColor={isColor} />
       <Carte isColor={isColor} />
       <SectionDivider isColor={isColor} />
