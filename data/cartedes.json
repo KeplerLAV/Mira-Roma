@@ -1,0 +1,68 @@
+{
+  "carte_sucree": [
+    {
+      "category": "Desserts",
+      "items": [
+        { "name": "Tiramisu maison", "price": 6.50, "composition": "Mousse au mascarpone et au marsala sur génoise imbibée de café et de sirop au marsala, décor cacao" },
+        { "name": "Ile flottante", "price": 5.50, "composition": "" },
+        { "name": "Crème caramel", "price": 5.50, "composition": "" },
+        { "name": "Mousse au chocolat", "price": 5.50, "composition": "" },
+        { "name": "Tarte Tatin nature", "price": 6.50, "composition": "" },
+        { "name": "Tarte Tatin crème fraîche", "price": 6.50, "composition": "" },
+        { "name": "Tarte Tatin crème fouettée", "price": 7.00, "composition": "" },
+        { "name": "Tarte chaude aux pommes", "price": 7.00, "composition": "" },
+        { "name": "Tarte chaude à la banane", "price": 7.00, "composition": "" },
+        { "name": "Tarte au citron meringuée", "price": 6.50, "composition": "" },
+        { "name": "Gâteau moelleux au chocolat", "price": 5.50, "composition": "" },
+        { "name": "Baba au rhum crème fouettée", "price": 6.50, "composition": "" },
+        { "name": "Crème brûlée", "price": 6.00, "composition": "" },
+        { "name": "Profiteroles au chocolat", "price": 7.50, "composition": "" },
+        { "name": "Fromage blanc", "price": 4.00, "composition": "" },
+        { "name": "Fromage blanc au miel", "price": 4.50, "composition": "" },
+        { "name": "Macaron coulant chocolat", "price": 7.00, "composition": "Crème anglaise et crème fouettée" },
+        { "name": "Café gourmand", "price": 7.00, "composition": "" }
+      ]
+    },
+    {
+      "category": "Les Glaces",
+      "details": {
+        "prices": { "2_boules": 4.50, "3_boules": 6.00, "supplement_chantilly": 1.00 },
+        "parfums": ["Vanille", "Caramel beurre salé", "Café", "Chocolat avec morceaux", "Menthe chocolat", "Smarties", "Rhum raisins", "Fraise", "Praliné", "Framboise", "Citron", "Cassis", "Poire"]
+      },
+      "items": [
+        { "type": "Classique", "name": "Dame blanche", "price": 6.50, "composition": "Glace vanille, nappage, crème fouettée" },
+        { "type": "Classique", "name": "Café liégeois", "price": 6.50, "composition": "Glace café, sauce café, crème fouettée" },
+        { "type": "Classique", "name": "Chocolat liégeois", "price": 6.50, "composition": "Glace chocolat, sauce chocolat, crème fouettée" },
+        { "type": "Gourmande", "name": "Amaréna", "price": 6.50, "composition": "Glace vanille, griottes, crème fouettée" },
+        { "type": "Gourmande", "name": "Rigoletto", "price": 6.50, "composition": "Glace vanille, crème de marron, sauce caramel, crème fouettée" },
+        { "type": "Alcoolisée", "name": "Colonel", "price": 7.50, "composition": "Sorbet citron vert, vodka" },
+        { "type": "Alcoolisée", "name": "William", "price": 7.50, "composition": "Sorbet poire, alcool de poire" }
+      ]
+    },
+    {
+      "category": "Menus",
+      "items": [
+        {
+          "name": "Menu Roma",
+          "price_options": [
+            { "label": "Entrée + Plat", "price": 18.00 },
+            { "label": "Plat + Dessert", "price": 18.00 },
+            { "label": "Entrée + Plat + Dessert", "price": 20.00 }
+          ],
+          "availability": "Uniquement le midi du lundi au vendredi (hors jours fériés)",
+          "options": {
+            "entrees": ["Cocktail d'Italie", "Salade feta"],
+            "plats": ["Pizza Carciofo", "Lasagnes bolognese"],
+            "desserts": ["Crème caramel", "Mousse au chocolat", "Fromage blanc"]
+          }
+        },
+        {
+          "name": "Menu Enfant",
+          "price": 12.00,
+          "condition": "Moins de 12 ans",
+          "composition": "Mini pizza Bambino OU Jambon frites OU Spaghetti + Glace 1 boule + Verre de jus d'orange (15cl)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "menu": [
+    {
+      "category": "Bruschettas",
+      "description": "Pour accompagner votre apéritif",
+      "items": [
+        {
+          "name": "Bruschetta Napoletana",
+          "price": 9.50,
+          "composition": "Pain grillé, tomate marinée, mozzarella, basilic, ail"
+        },
+        {
+          "name": "Bruschetta Formaggi",
+          "price": 12.50,
+          "composition": "Pain grillé, chèvre, mozzarella, gorgonzola, parmesan"
+        },
+        {
+          "name": "Bruschetta Parma",
+          "price": 13.00,
+          "composition": "Pain grillé, tomate marinée, mozzarella, basilic, ail, jambon de Parme"
+        }
+      ]
+    },
+    {
+      "category": "Entrées",
+      "items": [
+        { "name": "Salade verte", "price": 4.00, "composition": "" },
+        { "name": "Salade Rucola", "price": 5.50, "composition": "Roquette, tomate cerise, basilic, huile d'olive, copeaux de parmesan" },
+        { "name": "Salade au chèvre chaud", "price": 9.00, "composition": "Salade, crottins de chèvre chaud" },
+        { "name": "Salade mozzarella", "price": 9.00, "composition": "Tomate, mozzarella, huile d'olive, basilic" },
+        { "name": "Salade aux gésiers", "price": 9.50, "composition": "Salade, gésiers" },
+        { "name": "Salade aux lardons", "price": 9.50, "composition": "Salade, lardons, œuf poché" },
+        { "name": "Avocat crevettes", "price": 9.50, "composition": "Avocat, crevettes, sauce cocktail" },
+        { "name": "Salade Bufalina", "price": 13.50, "composition": "Roquette, mozzarella di bufala, jambon de Parme, tomate cerise, copeaux de parmesan" },
+        { "name": "Aubergine parmigiana", "price": 15.00, "composition": "Aubergine, mozzarella, gratinée au four" },
+        { "name": "Carpaccio de bœuf", "price": 15.00, "composition": "Copeaux de parmesan, basilic, huile d'olive" },
+        { "name": "Cocktail d'Italie", "price": 16.00, "composition": "Assortiment de charcuteries italiennes" },
+        { "name": "Jambon de Parme", "price": 15.00, "composition": "" }
+      ]
+    },
+    {
+      "category": "Les Pizzas",
+      "items": [
+        { "name": "Marguerite", "price": 11.00, "composition": "Tomate, mozzarella fior di latte" },
+        { "name": "Napolitaine", "price": 11.50, "composition": "Tomate, mozzarella fior di latte, anchois, câpres" },
+        { "name": "Chef", "price": 14.00, "composition": "Tomate, mozzarella fior di latte, merguez, œuf" },
+        { "name": "Regina", "price": 14.00, "composition": "Tomate, mozzarella fior di latte, jambon, champignons" },
+        { "name": "Calzone (soufflée)", "price": 14.00, "composition": "Tomate, mozzarella fior di latte, jambon, œuf" },
+        { "name": "Chèvre chaud", "price": 14.00, "composition": "Tomate, mozzarella fior di latte, crottin de chèvre, bacon, crème fraîche" },
+        { "name": "Quatre Saisons", "price": 14.00, "composition": "Tomate, mozzarella fior di latte, jambon, artichaut, champignons, olives" },
+        { "name": "Mira Roma", "price": 14.50, "composition": "Tomate, mozzarella fior di latte, poivron, chorizo, coppa, merguez, œuf" },
+        { "name": "Campione", "price": 14.00, "composition": "Tomate, mozzarella fior di latte, viande hachée, champignons, œuf" },
+        { "name": "Neptune", "price": 14.00, "composition": "Tomate, mozzarella fior di latte, oignons, thon, câpres, œuf" },
+        { "name": "Quatre Fromages", "price": 14.50, "composition": "Tomate, mozzarella fior di latte, gorgonzola, chèvre, parmesan" },
+        { "name": "Vegetariana", "price": 14.50, "composition": "Tomate, mozzarella fior di latte, artichaut, aubergine, oignons, olives, poivrons, champignons" },
+        { "name": "Paysanne", "price": 14.00, "composition": "Tomate, mozzarella fior di latte, oignons, lardons, crème fraîche" },
+        { "name": "Dante", "price": 14.00, "composition": "Tomate, mozzarella fior di latte, roquette, coppa, tomate cerise, copeaux de parmesan" },
+        { "name": "Bufalina", "price": 16.00, "composition": "Mozzarella fior di latte, mozzarella di bufala, roquette, coppa, tomate cerise, copeaux de parmesan" },
+        { "name": "Parma", "price": 15.00, "composition": "Tomate, mozzarella fior di latte, jambon de Parme, crème fraîche" },
+        { "name": "Capricciosa", "price": 14.50, "composition": "Tomate, mozzarella fior di latte, gorgonzola, champignons, jambon, œuf" },
+        { "name": "Pacifico", "price": 15.00, "composition": "Tomate, mozzarella fior di latte, saumon fumé, crème fraîche" },
+        { "name": "Pescatore", "price": 15.50, "composition": "Tomate, mozzarella, ail, moules, crevettes, calamar" }
+      ]
+    },
+    {
+      "category": "Les Pâtes",
+      "items": [
+        { "name": "Spaghetti alla bolognese", "price": 12.50, "composition": "Tomate, viande hachée" },
+        { "name": "Spaghetti arrabiata", "price": 12.50, "composition": "Tomates fraîches, piments" },
+        { "name": "Tagliatelle au pesto", "price": 13.00, "composition": "Basilic, huile d'olive, parmesan" },
+        { "name": "Tagliatelle alla carbonara", "price": 14.50, "composition": "Crème, lardons, jaune d'œuf" },
+        { "name": "Tagliatelle al salmone", "price": 16.50, "composition": "Crème, saumon" },
+        { "name": "Tagliatelle Mira Roma", "price": 16.00, "composition": "Sauce tomate, jambon, champignons, petits pois, piment doux" },
+        { "name": "Tagliatelle aux Saint-Jacques", "price": 18.50, "composition": "Tomate, noix de Saint-Jacques" },
+        { "name": "Penne aux quatre fromages", "price": 15.00, "composition": "Crème fraîche, sauce gorgonzola, chèvre, gratinés au four" },
+        { "name": "Lasagnes alla bolognese", "price": 15.00, "composition": "Mozzarella, sauce tomate, viande hachée" },
+        { "name": "Aubergine alla parmigiana", "price": 15.00, "composition": "Sauce tomate, parmesan, gratinée au four" }
+      ]
+    },
+    {
+      "category": "Les Pâtes Fraîches",
+      "items": [
+        { "name": "Tortellini de bœuf à la crème", "price": 15.00, "composition": "Crème, parmesan" },
+        { "name": "Tortellini de bœuf à la romaine", "price": 15.50, "composition": "Crème fraîche, jambon, champignons, petits pois" },
+        { "name": "Tortellini de bœuf di cappo", "price": 16.00, "composition": "Crème fraîche, jambon de Parme, parmesan" },
+        { "name": "Pappardelle aux cèpes et à la crème de truffe noire", "price": 22.90, "composition": "" }
+      ]
+    },
+    {
+      "category": "Viandes",
+      "items": [
+        { "name": "Escalope alla milanese", "price": 17.00, "composition": "Veau pané" },
+        { "name": "Escalope au citron", "price": 17.50, "composition": "Veau, crème au citron" },
+        { "name": "Escalope au Marsala", "price": 17.50, "composition": "Veau, sauce au Marsala" },
+        { "name": "Escalope alla bolognese", "price": 18.50, "composition": "Veau, jambon, fromage, tomate gratinée" },
+        { "name": "Escalope alla parmigiana", "price": 18.50, "composition": "Veau, aubergine, tomate, fromage, gratinée" },
+        { "name": "Saltimbocca alla Romana", "price": 19.00, "composition": "Escalope de veau, jambon de Parme, mozzarella, gratinée" },
+        { "name": "Entrecôte grillée", "price": 21.00, "composition": "" },
+        { "name": "Entrecôte Mira Roma", "price": 23.00, "composition": "Crème, champignons" },
+        { "name": "Entrecôte sauce poivre ou gorgonzola", "price": 23.00, "composition": "" },
+        { "name": "Filet de bœuf grillé", "price": 24.00, "composition": "" },
+        { "name": "Filet de bœuf sauce poivre ou gorgonzola", "price": 26.00, "composition": "" }
+      ]
+    }
+  ]
+}
