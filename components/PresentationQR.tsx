@@ -9,7 +9,7 @@ interface PresentationQRProps {
 }
 
 export default function PresentationQR({ isColor }: PresentationQRProps) {
-  const websiteUrl = "https://mira-roma.netlify.app/";
+  const websiteUrl = "https://mira-roma.netlify.app/#carte";
   const transition = "transition-all duration-700 ease-in-out";
 
   // Thème dynamique
