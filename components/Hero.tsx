@@ -42,7 +42,7 @@ export default function Hero({ isColor }: { isColor: boolean }) {
         </motion.div>
 
         {/* Titre Monumental */}
-        <h1 className={`text-[15vw] md:text-[12vw] font-[1000] leading-[0.8] tracking-tighter mb-8 ${transition} ${
+        <h1 className={`text-[12vw] md:text-[8vw] font-[1000] leading-[0.8] tracking-tighter mb-8 ${transition} ${
           isColor 
             ? 'text-transparent bg-clip-text bg-gradient-to-b from-[var(--color-brand-primary)] to-[var(--color-brand-dark)]' 
             : 'text-white'
@@ -73,7 +73,7 @@ export default function Hero({ isColor }: { isColor: boolean }) {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
-          <button className={`group relative px-12 py-5 rounded-full font-black uppercase tracking-widest text-xs transition-all ${
+          <button className={`group relative px-10 py-3 rounded-full font-black uppercase tracking-widest text-xs transition-all ${
             isColor 
               ? 'bg-[var(--color-brand-primary)] text-white hover:shadow-[0_20px_40px_rgba(var(--color-brand-primary-rgb),0.3)]' 
               : 'bg-white text-black hover:bg-white/90'
@@ -81,7 +81,7 @@ export default function Hero({ isColor }: { isColor: boolean }) {
             <span className="relative z-10">Consulter la Carte</span>
           </button>
           
-          <button className={`px-12 py-5 rounded-full font-black uppercase tracking-widest text-xs border-2 transition-all ${
+          <button className={`px-10 py-3 rounded-full font-black uppercase tracking-widest text-xs border-2 transition-all ${
             isColor 
               ? 'border-stone-200 text-white hover:bg-stone-900 hover:text-brand-accent hover:border-brand-accent' 
               : 'border-white/10 text-white hover:bg-white hover:text-brand-accent'
