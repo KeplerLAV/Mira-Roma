@@ -2,13 +2,16 @@
 @import "tailwindcss";
 
 @theme {
-  /* Palette Mira Roma : Identité Franco-Italienne */
-  --color-brand-primary: #A62D2D;    /* Rouge Tomate Séchée (Chaud, Appétissant) */
-  --color-brand-secondary: #2D5A27;  /* Vert Basilic (Frais, Italien) */
-  --color-brand-accent: #D4AF37;     /* Or Mat (Élégance Française) */
-  --color-brand-bg: #121A13;         /* Crème/Papier (Authentique, pas de blanc pur) */
-  --color-brand-dark: #1B2B1E;       /* Charbon (Texte lisible) */
-  --color-brand-font: #EAECE2;
+  /* Palette Mira Roma : Sable, Terre d'Ombre et Éclats d'Italie */
+  --color-brand-bg: #F9F7F2;        /* Blanc Cassé / Perle (Fond principal) */
+  --color-brand-paper: #F2EFE7;      /* Beige Sable (Pour les sections ou boutons inactifs) */
+  
+  --color-brand-primary: #B32424;    /* Rouge Sangria (Plus profond pour trancher sur le clair) */
+  --color-brand-secondary: #3A5F34;  /* Vert Pin/Forêt (Plus sombre pour la lisibilité) */
+  --color-brand-accent: #C5A059;     /* Or Vieilli / Ocre (Pour les détails luxueux) */
+  
+  --color-brand-dark: #2C2926;       /* Brun Terre d'Ombre (Texte principal - plus doux que le noir) */
+  --color-brand-font: #4A4540;       /* Gris Brun (Pour les descriptions et l'italique) */
 }
 
 @layer base {
@@ -19,39 +22,58 @@
     font-family: 'Inter', system-ui, sans-serif;
   }
 
-  /* Titres avec une touche d'élégance */
-  h1, h2, h3 {
+  /* Titres : On utilise le Brun Terre d'Ombre par défaut pour l'élégance */
+  h1, h2 {
     @apply font-black tracking-tighter uppercase;
+    color: var(--color-brand-dark);
+  }
+
+  h3 {
+    @apply font-bold uppercase;
     color: var(--color-brand-primary);
   }
 
-  /* Style des liens par défaut */
-  a {
-    @apply transition-colors duration-300;
+  /* Sélection de texte */
+  ::selection {
+    background-color: var(--color-brand-primary);
+    color: white;
   }
 }
 
 @layer components {
-  /* La carte pour les menus ou sections */
+  /* Cartes : Fond légèrement plus sombre que le body ou blanc pur */
   .card-restaurant {
-    @apply bg-white border border-stone-200 rounded-2xl p-8 shadow-sm transition-all duration-500;
+    @apply bg-white border border-stone-200 rounded-3xl p-8 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] transition-all duration-500;
   }
 
-  /* Bouton Signature */
+  /* Bouton Signature : Le rouge ressort parfaitement sur le beige */
   .btn-mira {
-    @apply px-8 py-3 rounded-full font-bold uppercase tracking-widest text-sm transition-all duration-300;
+    @apply px-8 py-3 rounded-full font-bold uppercase tracking-[0.15em] text-[11px] transition-all duration-300;
     background-color: var(--color-brand-primary);
-    color: white;
+    color: #FFFFFF;
   }
 
   .btn-mira:hover {
-    background-color: var(--color-brand-secondary);
+    background-color: var(--color-brand-dark);
     transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px -10px rgba(179, 36, 36, 0.3);
   }
 
-  /* Input de formulaire élégant */
+  /* Badges de catégories (filtres) */
+  .badge-category {
+    @apply px-4 py-1.5 rounded-full border border-stone-200 text-[10px] font-black uppercase tracking-widest transition-all;
+    background-color: var(--color-brand-paper);
+    color: var(--color-brand-font);
+  }
+
+  .badge-category.active {
+    background-color: var(--color-brand-primary);
+    color: white;
+    border-color: var(--color-brand-primary);
+  }
+
+  /* Input de formulaire */
   .input-mira {
-    @apply w-full bg-transparent border-b-2 border-stone-300 py-3 focus:outline-none focus:border-brand-primary transition-colors;
+    @apply w-full bg-transparent border-b border-stone-300 py-3 focus:outline-none focus:border-brand-primary transition-colors placeholder:text-stone-400;
   }
 }

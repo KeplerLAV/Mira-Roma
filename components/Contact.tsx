@@ -2,12 +2,9 @@
 
 import { motion } from "framer-motion";
 
-export default function Contact({ isColor }: { isColor: boolean }) {
-  const transition = "transition-all duration-700 ease-in-out";
-  
-  const inputStyle = isColor 
-    ? "border-stone-200 focus:border-[var(--color-brand-primary)] text-[var(--color-brand-dark)]" 
-    : "border-white/20 focus:border-white text-white";
+export default function Contact() {
+  // Styles fixés sur le thème Clair / Beige
+  const inputStyle = "border-stone-200 focus:border-[var(--color-brand-primary)] text-[var(--color-brand-dark)] placeholder:text-stone-400";
 
   // Variantes pour les animations
   const fadeInUp = {
@@ -26,11 +23,11 @@ export default function Contact({ isColor }: { isColor: boolean }) {
   return (
     <section 
       id="contact" 
-      className={`py-24 px-6 overflow-hidden ${transition} ${isColor ? 'bg-[var(--color-brand-bg)]' : 'bg-black'}`}
+      className="py-24 px-6 overflow-hidden bg-[var(--color-brand-bg)]"
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
         
-        {/* Colonne Gauche : Infos & Fêtes */}
+        {/* Colonne Gauche : Infos & Événements */}
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -38,24 +35,20 @@ export default function Contact({ isColor }: { isColor: boolean }) {
           variants={staggerContainer}
           className="flex flex-col justify-center"
         >
-          <motion.h2 variants={fadeInUp} className={`text-4xl md:text-6xl font-black mb-6 leading-none ${
-            isColor ? 'text-[var(--color-brand-primary)]' : 'text-white'
-          }`}>
+          <motion.h2 variants={fadeInUp} className="text-4xl md:text-6xl font-black mb-6 leading-tight text-[var(--color-brand-dark)]">
             VOS ÉVÉNEMENTS <br /> 
-            <span className={isColor ? 'text-[var(--color-brand-accent)]' : 'text-white/60'}>SUR MESURE</span>
+            <span className="text-[var(--color-brand-primary)]">SUR MESURE</span>
           </motion.h2>
           
           <motion.div variants={fadeInUp} className="space-y-6">
-            <p className={`text-lg leading-relaxed ${isColor ? 'text-[var(--color-brand-font)]' : 'text-white/80'}`}>
-              Pour vos **fêtes de famille**, anniversaires ou repas d'entreprise, profitez de notre salle de 50 couverts avec piste de danse.
+            <p className="text-lg leading-relaxed text-stone-600">
+              Pour vos <strong className="text-[var(--color-brand-dark)]">fêtes de famille</strong>, anniversaires ou repas d'entreprise, profitez de notre salle de 50 couverts avec piste de danse.
             </p>
             
-            <ul className={`space-y-4 font-bold uppercase tracking-widest text-xs ${
-              isColor ? 'text-[var(--color-brand-secondary)]' : 'text-white/40'
-            }`}>
+            <ul className="space-y-4 font-black uppercase tracking-widest text-[10px] text-[var(--color-brand-secondary)]">
               {["Salle indépendante privatisable", "Piste de danse & Sono disponible", "Buffets et Menus de groupe"].map((item, i) => (
-                <motion.li key={i} variants={fadeInUp} className="flex items-center gap-3">
-                  <span className={`h-2 w-2 rounded-full ${isColor ? 'bg-[var(--color-brand-accent)]' : 'bg-white'}`} />
+                <motion.li key={i} variants={fadeInUp} className="flex items-center gap-4">
+                  <span className="h-2 w-2 rounded-full bg-[var(--color-brand-accent)] shadow-sm" />
                   {item}
                 </motion.li>
               ))}
@@ -69,11 +62,7 @@ export default function Contact({ isColor }: { isColor: boolean }) {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className={`p-8 rounded-3xl ${transition} ${
-            isColor 
-              ? 'bg-white shadow-2xl border border-stone-100' 
-              : 'bg-white/5 border border-white/10'
-          }`}
+          className="p-10 rounded-[2.5rem] bg-white shadow-[0_20px_50px_-20px_rgba(0,0,0,0.1)] border border-stone-100"
         >
           <form className="grid gap-6">
             <input 
@@ -95,27 +84,28 @@ export default function Contact({ isColor }: { isColor: boolean }) {
               />
             </div>
             
-            <select className={`w-full bg-transparent border-b-2 py-3 outline-none transition-colors ${inputStyle}`}>
-              <option className="text-black">Type d'événement</option>
-              <option className="text-black">Repas de groupe / Fête</option>
-              <option className="text-black">Réservation simple</option>
-              <option className="text-black">Demande de devis</option>
-            </select>
+            <div className="relative border-b-2 border-stone-200">
+              <select className={`w-full bg-transparent py-3 outline-none transition-colors appearance-none cursor-pointer ${inputStyle} border-none`}>
+                <option className="text-black">Type d'événement</option>
+                <option className="text-black">Repas de groupe / Fête</option>
+                <option className="text-black">Réservation simple</option>
+                <option className="text-black">Demande de devis</option>
+              </select>
+              <div className="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-stone-400">
+                ↓
+              </div>
+            </div>
 
             <textarea 
-              placeholder="Décrivez votre projet..." 
+              placeholder="Décrivez votre projet (date, nombre de convives...)" 
               rows={4} 
-              className={`w-full bg-transparent border-b-2 py-3 outline-none transition-colors ${inputStyle}`}
+              className={`w-full bg-transparent border-b-2 py-3 outline-none transition-colors resize-none ${inputStyle}`}
             ></textarea>
             
             <motion.button 
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className={`mt-4 py-4 rounded-full font-black uppercase tracking-[0.2em] text-sm shadow-xl ${transition} ${
-                isColor 
-                  ? 'bg-[var(--color-brand-primary)] text-white hover:bg-[var(--color-brand-secondary)]' 
-                  : 'bg-white text-black hover:invert'
-              }`}
+              className="mt-4 btn-mira w-full py-5 shadow-[0_10px_20px_-5px_rgba(179,36,36,0.3)]"
             >
               Envoyer la demande
             </motion.button>
